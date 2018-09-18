@@ -94,7 +94,7 @@ module.exports = function (ctx) {
                 return '<table class="table">';
               };
               MarkdownIt.renderer.rules.fence = wrap(MarkdownIt.renderer.rules.fence);
-              return source; 
+              return source;
             }
           }
         }),

@@ -2,6 +2,7 @@
     <q-layout :view="view">
         <q-layout-header v-model="header" :reveal="headerReveal">
             <q-toolbar :inverted="$q.theme === 'ios'">
+              <fty-module-tabs v-show="tabsShow" :module-list="moduleList" :current-module="currentModule" @select="selectModuleTab"></fty-module-tabs>
                 <q-btn flat round icon="menu" @click="left = !left" />
                 <q-btn flat round :icon="shrinkMenu?'keyboard_arrow_right':'keyboard_arrow_left'" @click="shrinkMenu = !shrinkMenu" /> &nbsp;&nbsp;&nbsp;
                 <fty-breadcrumbs :current-path="currentPath"></fty-breadcrumbs>
@@ -10,7 +11,7 @@
 
                     <!-- <span slot="subtitle">Header Subtitle</span> -->
                 </q-toolbar-title>
-                <a href="https://github.com/wjkang/vue-quasar-admin" class="text-white" target="_blank">
+                <!-- <a href="https://github.com/wjkang/vue-quasar-admin" class="text-white" target="_blank">
                     <q-btn flat round icon="fab fa-github"> </q-btn>
                 </a>
                 <router-link :to="{ name: 'requestlog'}" tag="label">
@@ -25,15 +26,18 @@
                         初始化数据
                     </q-tooltip>
                 </q-btn>
-                <q-btn flat round @click="toggleFullscreen()" :icon="$q.fullscreen.isActive ? 'fullscreen_exit' : 'fullscreen'" />
-                <q-btn flat round icon="menu" @click="right = !right" aria-label="Toggle menu on right side" />
+                <q-btn flat round @click="toggleFullscreen()" :icon="$q.fullscreen.isActive ? 'fullscreen_exit' : 'fullscreen'" /> -->
+                <q-btn push rounded color="grey-2" size="xs" label="logout" @click="logOut" />
+                <q-btn flat round icon="person" @click="right = !right" aria-label="Toggle menu on right side" />
+                <q-btn flat round icon="contact_support" @click="right = !right" aria-label="Toggle menu on right side" />
             </q-toolbar>
             <tags-view></tags-view>
             <q-slide-transition>
-                <fty-module-tabs v-show="tabsShow" :module-list="moduleList" :current-module="currentModule" @select="selectModuleTab"></fty-module-tabs>
+              <!--
+                <fty-module-tabs v-show="tabsShow" :module-list="moduleList" :current-module="currentModule" @select="selectModuleTab"></fty-module-tabs>-->
             </q-slide-transition>
             <q-page-sticky position="top-right" :offset="[18,-18]">
-                <q-btn fab-mini color="primary" text-color="white" icon="thumb_up" @click="tabsShow=!tabsShow" />
+                <q-btn fab-mini color="primary" text-color="white" icon="expand_less" @click="tabsShow=!tabsShow" />
             </q-page-sticky>
         </q-layout-header>
 
@@ -50,7 +54,7 @@
         <q-layout-drawer side="left" v-model="left" :overlay="leftOverlay" :behavior="leftBehavior" :breakpoint="leftBreakpoint" :content-style="{width:shrinkMenu?'60px':'250px'}" content-class="bg-grey-3">
 
             <!-- <q-list-header>Menu</q-list-header> -->
-            <q-item v-show="!shrinkMenu" style="padding:10px">
+            <!-- <q-item v-show="!shrinkMenu" style="padding:10px">
                 <q-item-side :avatar="userInfo.avatar" color="primary" />
                 <q-item-main>
                     <q-item-tile label>{{ userInfo.name }}</q-item-tile>
@@ -59,7 +63,7 @@
                     <q-btn push round color="secondary" size="xs" icon="navigation" @click="userinfo" />
                     <q-btn push rounded color="purple" size="xs" label="exit" @click="logOut" />
                 </q-item-side>
-            </q-item>
+            </q-item> -->
             <q-item v-show="shrinkMenu" style="padding:10px">
                 <q-item-side :avatar="userInfo.avatar" color="primary">
                     <q-popover anchor="top right" self="top left">

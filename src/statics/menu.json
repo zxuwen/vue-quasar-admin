@@ -1,0 +1,398 @@
+{
+  "statusCode": 200,
+  "msg": "",
+  "data": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "path": "",
+      "icon": "account_balance",
+      "title": "\u54c1\u724c\u4e13\u533a",
+      "name": "\u54c1\u724c\u4e13\u533a",
+      "leftMemu": true,
+      "functionCode": "",
+      "isLock": false,
+      "sort": 1,
+      "children": [
+        {
+          "id": 2,
+          "parentId": 1,
+          "path": "\/cms",
+          "icon": "gavel",
+          "title": "CMS",
+          "name": "CMS",
+          "leftMemu": true,
+          "functionCode": "",
+          "children": [
+            {
+              "id": 3,
+              "parentId": 2,
+              "path": "article",
+              "icon": "settings",
+              "title": "\u6587\u7ae0\u7ba1\u7406",
+              "name": "article",
+              "leftMemu": true,
+              "functionCode": "article_view",
+              "sort": 2,
+              "isLock": false,
+              "children": [
+                {
+                  "id": "ad4c1590-a576-463f-b9e6-a6eacc8a8ef0",
+                  "parentId": 3,
+                  "title": "\u6587\u7ae0\u7f16\u8f91",
+                  "name": "post_edit",
+                  "icon": "card_giftcard",
+                  "leftMemu": false,
+                  "functionCode": "post_edit",
+                  "children": [
+
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3942a177-a52d-494b-bcd5-c3c1aba90b02",
+      "parentId": 0,
+      "title": "\u5f00\u53d1",
+      "name": "\u5f00\u53d1",
+      "icon": "build",
+      "leftMemu": true,
+      "sort": 2,
+      "children": [
+        {
+          "id": "b8876771-f729-4843-932b-595d83fa50f4",
+          "parentId": "3942a177-a52d-494b-bcd5-c3c1aba90b02",
+          "title": "\u5b98\u65b9\u7ec4\u4ef6",
+          "name": "official",
+          "icon": "add_to_queue",
+          "leftMemu": true,
+          "sort": 1,
+          "children": [
+            {
+              "id": "0421723a-1493-4259-b9c0-fbac9e7aaa8f",
+              "parentId": "b8876771-f729-4843-932b-595d83fa50f4",
+              "title": "Buttons",
+              "name": "buttons",
+              "icon": "library_music",
+              "leftMemu": true,
+              "sort": 1,
+              "children": [
+                {
+                  "id": "2d6880bd-d02f-42fb-b000-d558fc1b8919",
+                  "parentId": "0421723a-1493-4259-b9c0-fbac9e7aaa8f",
+                  "title": "Button",
+                  "name": "button",
+                  "icon": "group_work",
+                  "leftMemu": true,
+                  "sort": 1,
+                  "children": [
+
+                  ]
+                },
+                {
+                  "id": "c81df8fa-614d-4b01-b367-c42ec2621eaf",
+                  "parentId": "0421723a-1493-4259-b9c0-fbac9e7aaa8f",
+                  "title": "Button-Group",
+                  "name": "button-group",
+                  "leftMemu": true,
+                  "sort": 2,
+                  "icon": "extension",
+                  "children": [
+
+                  ]
+                },
+                {
+                  "id": "15d87370-2205-4066-9785-330211fa9af9",
+                  "parentId": "0421723a-1493-4259-b9c0-fbac9e7aaa8f",
+                  "title": "Dropdown Button",
+                  "name": "dropdown-button",
+                  "icon": "class",
+                  "leftMemu": true,
+                  "isLock": false,
+                  "sort": 3,
+                  "children": [
+
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b4db3bed-b26b-48de-ba75-5e8c350c1f3c",
+              "parentId": "b8876771-f729-4843-932b-595d83fa50f4",
+              "title": "Navigation",
+              "name": "navigation",
+              "icon": "grade",
+              "leftMemu": true,
+              "sort": 2,
+              "children": [
+                {
+                  "id": "5da38c51-f65c-4e6f-82d4-5e9d746873b2",
+                  "parentId": "b4db3bed-b26b-48de-ba75-5e8c350c1f3c",
+                  "title": "Toolbar",
+                  "name": "toolbar",
+                  "leftMemu": true,
+                  "sort": 1,
+                  "icon": "compare",
+                  "children": [
+
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "779a4d68-9163-41ff-a9d1-19c6146ef470",
+          "parentId": "3942a177-a52d-494b-bcd5-c3c1aba90b02",
+          "title": "\u4e1a\u52a1\u7ec4\u4ef6",
+          "name": "business",
+          "icon": "local_gas_station",
+          "leftMemu": true,
+          "sort": 2,
+          "children": [
+            {
+              "id": "6bcf5fd6-3677-45ac-aa3b-7b016ef20f71",
+              "parentId": "779a4d68-9163-41ff-a9d1-19c6146ef470",
+              "title": "sku",
+              "name": "sku",
+              "icon": "library_books",
+              "leftMemu": true,
+              "sort": 1,
+              "children": [
+
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "parentId": 0,
+      "path": "",
+      "icon": "settings",
+      "title": "\u7cfb\u7edf",
+      "name": "\u7cfb\u7edf",
+      "leftMemu": true,
+      "functionCode": "",
+      "sort": 3,
+      "children": [
+        {
+          "id": 5,
+          "parentId": 4,
+          "path": "\/system",
+          "icon": "important_devices",
+          "title": "\u7cfb\u7edf\u8bbe\u7f6e",
+          "name": "\u7cfb\u7edf\u8bbe\u7f6e",
+          "leftMemu": true,
+          "functionCode": "",
+          "children": [
+            {
+              "id": 6,
+              "parentId": 5,
+              "path": "menu",
+              "icon": "poll",
+              "title": "\u83dc\u5355\u7ba1\u7406",
+              "name": "menu",
+              "leftMemu": true,
+              "functionCode": "menu_view",
+              "children": [
+
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "parentId": 4,
+          "path": "\/permission",
+          "icon": "https",
+          "title": "\u6743\u9650\u7ba1\u7406",
+          "name": "\u6743\u9650\u7ba1\u7406",
+          "leftMemu": true,
+          "functionCode": "",
+          "children": [
+            {
+              "id": 8,
+              "parentId": 7,
+              "path": "function",
+              "icon": "settings_applications",
+              "title": "\u529f\u80fd\u7ba1\u7406",
+              "name": "function",
+              "leftMemu": true,
+              "functionCode": "function_view",
+              "children": [
+
+              ]
+            },
+            {
+              "id": 20,
+              "parentId": 7,
+              "path": "role",
+              "icon": "group",
+              "title": "\u89d2\u8272\u7ba1\u7406",
+              "name": "role",
+              "leftMemu": true,
+              "functionCode": "role_view",
+              "children": [
+
+              ]
+            },
+            {
+              "id": 9,
+              "parentId": 7,
+              "path": "rolepermission",
+              "icon": "group_add",
+              "title": "\u89d2\u8272\u6743\u9650\u7ba1\u7406",
+              "name": "rolepermission",
+              "leftMemu": true,
+              "functionCode": "role_permission_view",
+              "children": [
+
+              ]
+            },
+            {
+              "id": 10,
+              "parentId": 7,
+              "path": "roleuser",
+              "icon": "person_add",
+              "title": "\u89d2\u8272\u7528\u6237\u7ba1\u7406",
+              "name": "roleuser",
+              "leftMemu": true,
+              "functionCode": "role_user_view",
+              "children": [
+
+              ]
+            },
+            {
+              "id": 11,
+              "parentId": 7,
+              "path": "userrole",
+              "icon": "person_outline",
+              "title": "\u7528\u6237\u89d2\u8272\u7ba1\u7406",
+              "name": "userrole",
+              "leftMemu": true,
+              "functionCode": "user_role_view",
+              "children": [
+
+              ]
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "parentId": 4,
+          "path": "\/organization",
+          "icon": "confirmation_number",
+          "title": "\u7ec4\u7ec7\u67b6\u6784",
+          "name": "\u7ec4\u7ec7\u67b6\u6784",
+          "leftMemu": true,
+          "functionCode": "",
+          "children": [
+            {
+              "id": 13,
+              "parentId": 12,
+              "path": "department",
+              "icon": "featured_video",
+              "title": "\u90e8\u95e8\u7ba1\u7406",
+              "name": "department",
+              "leftMemu": true,
+              "functionCode": "department_view",
+              "children": [
+
+              ]
+            },
+            {
+              "id": 14,
+              "parentId": 12,
+              "path": "position",
+              "icon": "add_to_queue",
+              "title": "\u804c\u4f4d\u7ba1\u7406",
+              "name": "position",
+              "leftMemu": true,
+              "functionCode": "position_view",
+              "children": [
+
+              ]
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "parentId": 4,
+          "path": "\/user",
+          "icon": "school",
+          "title": "\u7528\u6237\u7ba1\u7406",
+          "name": "\u7528\u6237\u7ba1\u7406",
+          "leftMemu": true,
+          "functionCode": "",
+          "children": [
+            {
+              "id": 16,
+              "parentId": 15,
+              "path": "index",
+              "icon": "movie_creation",
+              "title": "\u7528\u6237\u7ba1\u7406",
+              "name": "user_index",
+              "leftMemu": true,
+              "functionCode": "user_view",
+              "children": [
+
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "parentId": 0,
+      "path": "\/",
+      "name": "otherRouter",
+      "leftMemu": false,
+      "icon": "remove_circle",
+      "functionCode": "",
+      "title": "\u9996\u9875",
+      "children": [
+        {
+          "id": 18,
+          "parentId": 17,
+          "path": "home",
+          "title": "\u9996\u9875",
+          "name": "home_index",
+          "icon": "account_balance",
+          "functionCode": "",
+          "children": [
+
+          ]
+        },
+        {
+          "id": 19,
+          "parentId": 17,
+          "path": "userinfo",
+          "title": "\u4e2a\u4eba\u4e2d\u5fc3",
+          "name": "userinfo",
+          "icon": "account_box",
+          "functionCode": "",
+          "children": [
+
+          ]
+        },
+        {
+          "id": "ef59de52-9995-49bc-a8ab-fb41093639c9",
+          "parentId": 17,
+          "title": "\u5ba1\u8ba1\u65e5\u5fd7",
+          "name": "requestlog",
+          "icon": "description",
+          "children": [
+
+          ]
+        }
+      ]
+    }
+  ]
+}

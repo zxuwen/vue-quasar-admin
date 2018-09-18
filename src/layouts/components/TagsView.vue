@@ -1,20 +1,22 @@
 <template>
     <q-toolbar :inverted="$q.theme === 'ios'">
-        <div style="width:100%">
+      <q-btn class="float-right" outline rounded @click="closeTags()" label="清空"/>
+        <div style="width:95%">
             <div class="tags-view-container">
                 <scroll-pane class='tags-view-wrapper' ref='scrollPane'>
-                    <q-chip ref="tag" tag square v-ripple v-for="item in tagsList" :key="item.name" :name="item.name" :closable="item.name==='home_index'?false:true" :color="item.name===currentPageName?'secondary':'green-4'" :class="item.name===currentPageName?'active':''" style="margin-left:4px" @hide="closePage(item.name)" @click="linkTo(item)">{{item.title}}</q-chip>
+                    <q-chip ref="tag" tag square v-ripple v-for="item in tagsList" :key="item.name" :name="item.name" :closable="item.name==='home_index'?false:true" :color="item.name===currentPageName?'secondary':'blue-grey'" :class="item.name===currentPageName?'active':''" style="margin-left:4px" @hide="closePage(item.name)" @click="linkTo(item)">{{item.title}}</q-chip>
                 </scroll-pane>
             </div>
         </div>
-        <q-select inverted color="green-9" placeholder="标签选项" v-model="closeType" @input="tagManage" :options="[{
+        <q-btn class="float-right" outline rounded @click="closeTags()" label="清空"/>
+        <!-- <q-select inverted color="grey-2" placeholder="标签选项" v-model="closeType" @input="tagManage" :options="[{
           label: '关闭其他',
           value: 'other'
         },
         {
           label: '关闭所有',
           value: 'all'
-        }]" />
+        }]" /> -->
     </q-toolbar>
 </template>
 
@@ -93,6 +95,10 @@ export default {
           }
         });
       this.closeType = "";
+    },
+    closeTags() {
+      this.$store
+        .dispatch("closePages", { type: "other", name: this.currentPageName })
     }
   },
   mounted() {

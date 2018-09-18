@@ -155,26 +155,6 @@ const developRouter = [
     name: 'official',
     component: layout,
     children: [
-      {
-        path: 'button',
-        name: 'button',
-        component: () => import('pages/develop/official/button.md')
-      },
-      {
-        path: 'button-group',
-        name: 'button-group',
-        component: () => import('pages/develop/official/button-group.md')
-      },
-      {
-        path: 'dropdown-button',
-        name: 'dropdown-button',
-        component: () => import('pages/develop/official/dropdown-button.md')
-      },
-      {
-        path: 'toolbar',
-        name: 'toolbar',
-        component: () => import('pages/develop/official/toolbar.md')
-      }
     ]
   }
 ]
@@ -187,4 +167,3 @@ export const routes = [
   ...appRouter,
   ...developRouter
 ];
-
